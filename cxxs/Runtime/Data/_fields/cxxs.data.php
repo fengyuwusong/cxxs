@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'uid', 1 => 'music', 2 => 'username', 3 => 'poll', 4 => 'lasttime', '_autoinc' => false, '_pk' => 'uid', '_type' => array ( 'uid' => 'int(10)', 'music' => 'text', 'username' => 'text', 'poll' => 'int(10) unsigned', 'lasttime' => 'int(10)', ), );?>

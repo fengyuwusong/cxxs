@@ -1,0 +1,33 @@
+[ 2015-11-11T21:16:45+08:00 ] 127.0.0.1 /cxxs/index.php/index/checkID.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002325s ]
+NOTIC: [8] Undefined index: cxxs G:\upupw_new\htdocs\cxxs\cxxs\Lib\Action\IndexAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: HTTP_CLIENT_IP G:\upupw_new\htdocs\cxxs\cxxs\Lib\Action\IndexAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_X_FORWARDED_FOR G:\upupw_new\htdocs\cxxs\cxxs\Lib\Action\IndexAction.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `xk_ip` [ RunTime:0.151295s ]
+SQL: SELECT `id` FROM `xk_ip`  [ RunTime:0.000328s ]
+SQL: INSERT INTO `xk_ip` (`id`,`createtime`) VALUES ('127.0.0.1',1447247805) [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `xk_data` [ RunTime:0.002437s ]
+SQL: SELECT * FROM `xk_data` WHERE ( `uid` = 0 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: UPDATE `xk_data` SET `poll`=111123,`lasttime`=1447247805 WHERE ( `uid` = 0 ) [ RunTime:0.000458s ]
+
+[ 2015-11-11T21:18:11+08:00 ] 127.0.0.1 /cxxs/index.php/index/checkID.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013095s ]
+
+[ 2015-11-11T21:25:24+08:00 ] 172.31.9.65 /cxxs/index.php/index/checkID.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+NOTIC: [8] Undefined index: cxxs G:\upupw_new\htdocs\cxxs\cxxs\Lib\Action\IndexAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: HTTP_CLIENT_IP G:\upupw_new\htdocs\cxxs\cxxs\Lib\Action\IndexAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: HTTP_X_FORWARDED_FOR G:\upupw_new\htdocs\cxxs\cxxs\Lib\Action\IndexAction.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `xk_ip` [ RunTime:0.002728s ]
+SQL: SELECT `id` FROM `xk_ip`  [ RunTime:0.000292s ]
+SQL: INSERT INTO `xk_ip` (`id`,`createtime`) VALUES ('172.31.9.65',1447248324) [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `xk_data` [ RunTime:0.002792s ]
+SQL: SELECT * FROM `xk_data` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: UPDATE `xk_data` SET `poll`=222235,`lasttime`=1447248324 WHERE ( `uid` = 1 ) [ RunTime:0.000289s ]
+

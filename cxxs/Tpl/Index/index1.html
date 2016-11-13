@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="华南理工大学广州学院,华广,星空学生创新中心,www.xingkong.us">
+	<meta name="description" content="星空,学生艺术团,唱响新声">
+<title>唱响新声·音你而乐</title>
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+<link rel="icon"type="image/ico" href="favicon.ico">
+<script type="text/javascript" src="__PUBLIC__/js/html5.js"></script>
+
+</head>
+<body>
+<div id="bg">
+ <!-- 头部 -->
+ <div id="header">
+ 	<a href="http://www.xingkong.us" id="logo"></a>
+ 	<div class="banner_bg">
+		<div id="banner">
+ 			<a  class="img img1" target="_blank"></a>
+			<a  class="img img2" href="http://www.xingkong.us" target="_blank"></a>
+			<a  class="img img3" target="_blank"></a>
+		</div>
+		<div id="arrow">
+			<span class="arrow_left" id="prev" ></span>
+			<span class="arrow_right" id="next" ></span>
+		</div>
+ 	</div>
+ </div>
+
+ <!-- 前言 -->
+ <div id="bgcolor">
+ 	<div id="preface">
+ 		<p>大学生活中的你们，我们，他们，是否都还记得最初的梦想？是否还坚持着心中的向往？是否还有着为青春奔跑的热情？是否有一个明确的志向，去感受生命的美好，去为理想奋斗，去关爱他人？为了让华广学子重拾激情，唱响青春赞歌。经研究，华南理工大学广州学院决定2015年10月17日隆重举办新一季的 《唱响新声》，历时23天。释放自己，歌唱梦想，让我们的歌声回荡在这个美丽的秋天。</p>
+ 		<h3>————华南理工大学广州学院学生艺术团</h3>
+ 	</div>
+ </div>
+
+ <!-- 选手信息 -->
+ <div id="player">
+ 	<div class="title"></div>
+	<div class="vote_title">投票系统已经上线，大家点击进去可为自己喜欢的选手投票，投票有机会获得决赛门票哦</div>
+ 	<div id="list">
+		<div id="message">
+  			<ul id="all">
+ 				<ul id="first">
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer1.png" id="singer1">
+						</div>
+						<div id="votesum1"></div>
+ 					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer2.png" id="singer2">
+						</div>
+						<div id="votesum2"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer3.png" id="singer3">
+						</div>
+						<div id="votesum3"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer4.png" id="singer4">
+						</div>
+						<div id="votesum4"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer5.png" id="singer5">
+						</div>
+						<div id="votesum5"></div>
+					</li>
+ 				</ul>
+ 				<ul id="second">
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer6.png" id="singer6">
+						</div>
+						<div id="votesum6"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer7.png" id="singer7">
+						</div>
+						<div id="votesum7"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer8.png" id="singer8">
+						</div>
+						<div id="votesum8"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer9.png" id="singer9">
+						</div>
+						<div id="votesum9"></div>
+					</li>
+ 					<li>
+						<div class="pic">
+							<img src="__PUBLIC__/image/singer10.png" id="singer10">
+						</div>
+						<div id="votesum10"></div>
+					</li>
+ 				</ul>
+ 			</ul>
+ 		</div>
+ 		<div id="people">
+ 			<i id="close">
+ 				<img src="__PUBLIC__/image/close.png">
+			</i>
+ 			<div id="people_pic">
+				<div id="people_vote">
+					<div id="getvote"></div>
+					<p id="vote_click"></p>
+					<div id="song">
+						<p>演唱曲目:《奇迹再现》</p>
+					</div>
+				</div>
+				<div id="audiobox">
+	 				<audio controls="controls" controls="controls" id="audio">
+	  					<source type="audio/mp4"/>
+					 您的浏览器不支持该播放器。
+					</audio>
+				</div>
+ 			</div>
+			<div id="vote_on">
+				<img src="__PUBLIC__/image/close_.png" id="close_">
+				<div id="choice">
+					<p>恭喜你</p>
+					<p>投票成功</p>
+					<p id="write_text">填写信息抢决赛门票</p>
+					<p id="close_text">谢谢，我不需要</p>
+				</div>
+				<div id="write">
+					<p>-请先填写个人信息-</p>
+					<form action="{:U('Index/voter')}" method="POST">
+						<div id="form">
+							<input type="text" placeholder="姓名" name="name" required="required" pattern="(^[\u4e00-\u9fbf]{2,8}$)" title="请输入正确的名字">
+							<input type="text" placeholder="学号" name="num" required="required"  pattern="\d{12}"  title="请输入正确的学号">
+							<input type="text" placeholder="联系方式" name="phone" required="required" pattern="^1[3|4|5|8][0-9]\d{8}$" title="请输入正确的电话号码">
+						</div>
+					<p>*联系方式用于联系中奖者，可填短号</p >
+						<input type="submit" id="submit" value="提交" >
+					</form> 
+<!-- 					<form>
+						<div id="form">
+							<input type="text" placeholder="姓名">
+							<input type="text" placeholder="学号">
+							<input type="text" placeholder="联系方式">
+						</div>
+					<p>*联系方式用于联系中奖者，可填短号</p>
+					<input type="submit" id="submit" value="提交">
+					</form> -->
+				</div>
+			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+ <!-- 赛制简介 -->
+ <div id="note">
+ 	<div class="title"></div>
+ 	<div id="content">
+ 		<div id="line"></div>
+ 		<div id="part1">
+ 			<p>10月17-18日</p>
+ 			<p>海选</p>
+ 			<p>比赛形式</p>
+ 			<p>海选分为两天进行，每位参赛选手轮流上场，进行40秒的清唱。</p>
+ 			<p>评分形式</p>
+ 			<p>评委由五位专业评委和二十位大众评审团组成，专业评委全数通过则直接晋级，如有余下晋级名额将按照专业评委和大众评委票数进行补位。</p>
+ 		</div>
+ 		<div id="part2">
+ 			<p>11月1日</p>
+ 			<p>复赛</p>
+ 			<p>比赛形式</p>
+ 			<p>第一轮：将30人分成A、B、C三组进行，按最终得分进入第二轮，最终角逐出唱响十强进入决赛。</p>
+ 			<p>评分形式</p>
+ 			<p>第一轮：经过老师评分，根据分数A、B、C组按名额淘汰选手。</p>
+ 			<p>第二轮：五位评委根据评分结果挑出最优10名选手。</p>
+ 		</div>
+ 		<div id="part3">
+ 			<p>11月11、12晚</p>
+ 			<p>化妆舞会&</p>
+ 			<p>小型音乐会</p>
+ 			<p>比赛形式</p>
+ 			<p>此次小型音乐会属于非比赛性质，只是单纯为十强选手提供一个表现自我的舞台，将没有任何的赛制和限制。</p>
+ 			<p>评分形式</p>
+ 			<p>此次小型音乐会属于非比赛性质，所以不做评分要求。</p>
+ 		</div>
+ 		<div id="part4">
+ 			<p>11月22日</p>
+ 			<p>决赛</p>
+ 			<p>比赛形式</p>
+ 			<p>届时在现场公布。</p>
+ 			<p>评分形式</p>
+ 			<p>现场评委根据选手台风、演唱实力、风格特质等进行综合评分。</p>
+ 		</div>
+ 	</div>
+ </div>
+
+ <div id="footer">
+	 <div id="copyright">
+		 <div id="organizer">
+			 <p>承办单位:</p>
+			 <img src="__PUBLIC__/image/ystlogo.png">
+		 </div>
+		 <div id="technology">
+			 <p>技术支持:</p>
+			 <img src="__PUBLIC__/image/xklogo.png">
+			 <img src="__PUBLIC__/image/sglogo.png" style="margin-left: 30px">
+		 </div>
+		 <div id="partner">
+			 <p>合作伙伴:</p>
+			 <img src="__PUBLIC__/image/partner.png">
+		 </div>
+		 <div id="copyright_text">Copyright ©2006-2015 星空学生创新中心</div>
+	 </div>
+ </div>
+
+ <!--工具栏-->
+ <div id="sidebar">
+	 <div id="backtop"></div>
+	 <div id="wechat">
+		 <div id="erweima"></div>
+	 </div>
+ </div>
+
+</div>
+<div style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256760328'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256760328' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.1.10.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js" charset="gb2312"></script>
+<script type="text/javascript">
+//后台票数
+	var URL = '{:U("Index/checkID")}';
+	var PUBLIC = '__PUBLIC__';
+	var sg1 = {$singerpoll0};
+	var sg2 = {$singerpoll1};
+	var sg3 = {$singerpoll2};
+	var sg4 = {$singerpoll3};
+	var sg5 = {$singerpoll4};
+	var sg6 = {$singerpoll5};
+	var sg7 = {$singerpoll6};
+	var sg8 = {$singerpoll7};
+	var sg9 = {$singerpoll8};
+	var sg10 ={$singerpoll9};
+</script>
+</body>
+</html>
